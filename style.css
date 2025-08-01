@@ -1,0 +1,250 @@
+body {
+  font-family: sans-serif;
+  background-color: #e6dbf5;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e6dbf5;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+header h1 {
+  color: purple;
+  margin: 0;
+  text-align: center;
+}
+.header a {
+  color: purple;
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:active {
+  text-decoration: underline;
+  color: purple;
+}
+
+nav {
+  background-color: #6a0dad;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #e6dbf5;
+}
+
+h2 {
+  color: purple;
+  font-size: 24px;
+  margin: 20px auto 10px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #e6dbf5;
+  text-align: center;
+  width: 100%;
+}
+
+section {
+  margin: 10px auto;
+  padding: 10px 20px;
+  max-width: 1000px;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+section p,
+section li {
+  color: black;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+section ul li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: #a678d1;
+  font-weight: 400;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5c0099;
+}
+
+.italic-nav li a {
+  font-style: italic;
+  font-weight: normal; 
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.italic-nav li a:hover,
+.italic-nav li a:active {
+  background-color: #e6ccff;
+  color: black;
+  transform: scale(1.1);
+  text-shadow: none;
+}
+
+footer {
+  background-color: #e6dbf5;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+header p {
+  text-align: center;
+  color: purple;
+  font-size: 14px;
+  margin: 5px auto;
+}
+
+header p a {
+  color: purple;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header p a:hover {
+  text-decoration: underline;
+}
+
+/* Indent for sections from Technical Skills to Interests */
+#technical-skills ul,
+#technical-skills li,
+#experience ul,
+#experience li,
+#education ul,
+#education li,
+#projects ul,
+#projects li,
+#certifications ul,
+#certifications li,
+#membership ul,
+#membership li,
+#interests ul,
+#interests li,
+#lets-work ul,
+#lets-work li {
+  margin-left: 3em;
+  text-indent: 0;
+}
+
+/* Make space above section titles almost none */
+section h2 {
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+/* Make space below section content almost none */
+section p,
+section ul {
+  margin-bottom: 4px;
+}
+
+/* Align #about paragraph and #lets-work ul content */
+#about p,
+#lets-work ul {
+  margin-left: 2em;
+}
+
+/* Remove extra margin from #lets-work li so bullets align with text */
+#lets-work li {
+  margin-left: 0;
+}
+
+/* Indent Awards and Languages sections content */
+#awards ul,
+#awards ul li,
+.languages-list,
+.languages-list li {
+  margin-left: 3em;
+}
+
+/* Add tick mark to languages list */
+.languages-list li::before {
+  content: "✓";
+  color: #a678d1;
+  margin-right: 8px;
+  font-weight: 400;
+}
+
+.profile-photo {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #a678d1;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.1);
+}
+
+.cv-btn {
+  display: inline-block;
+  margin: 10px auto 0 auto;
+  padding: 8px 18px;
+  background: #6a0dad;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+.cv-btn:hover {
+  background: #a678d1;
+  color: #fff;
+}
