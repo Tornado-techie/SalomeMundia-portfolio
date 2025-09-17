@@ -1,0 +1,10 @@
+#ignore vs code settings
+.vscode/
+
+#ignore local history
+.local-history/
+
+#ignore node modules
+node_modules/
+
+#ignore environment variables file

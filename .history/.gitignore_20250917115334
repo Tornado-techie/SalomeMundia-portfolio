@@ -1,0 +1,6 @@
+#ignore vs code settings
+.vscode/
+
+#ignore local history
+.local-history/
+

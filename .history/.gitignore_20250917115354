@@ -1,0 +1,18 @@
+#ignore vs code settings
+.vscode/
+
+#ignore local history
+.local-history/
+
+#ignore node modules
+node_modules/
+
+#ignore environment variables file
+.env
+
+#ignore log files
+*.log
+
+#ignore build output
+dist/
+
