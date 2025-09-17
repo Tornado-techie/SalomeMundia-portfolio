@@ -3,6 +3,8 @@
 
 #ignore local history
 .local-history/
+.history/
+
 
 
 
