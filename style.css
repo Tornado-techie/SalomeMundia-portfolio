@@ -1,3 +1,26 @@
+/* Footer Styles */
+footer {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  width: 100%;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--primary-light);
+}
 :root {
   --primary-color: #10b981; /* Vibrant Green */
   --primary-dark: #0f766e; /* Darker Green for hover */
@@ -1024,12 +1047,75 @@ html {
 }
 
 /* Contact Form */
+
 .contact-form {
-  background: var(--bg-card);
-  padding: 2rem;
-  border-radius: 16px;
+  background: var(--bg-secondary);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--primary-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.contact-form:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.submit-btn {
+  background: var(--gradient-primary) !important;
+  color: #fff !important;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
   box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-color);
+  width: 100%;
+  letter-spacing: 0.03em;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: var(--shadow-xl);
 }
 
 .form-control {
