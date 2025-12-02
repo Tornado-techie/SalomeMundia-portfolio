@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Meta Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +35,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loader-container">
+      <div class="loader"></div>
+      <p class="loading-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
   <div class="bg-animation"></div>
 
   <!-- Mobile Menu Toggle -->
@@ -341,7 +350,7 @@
         <div class="experience-timeline">
           <div class="experience-item">
             <time class="experience-date">April 2024 - Present</time>
-            <h3 class="experience-title">Global Technical Opeartions Officer @ "Sistema.bio"</h3>
+            <h3 class="experience-title">Global Technical Opeartions Officer @ Sistema.bio</h3>
             <h4 class="experience-location">Nairobi</h4>
              <p class="experience-description">
               In charge of global (LATAM, Africa, and Asia) ISO certifications and information management, SOP design, process quality, repository oversight, and team training within the clean renewable energy sector. 
@@ -371,7 +380,7 @@
           <div class="experience-item">
             <time class="experience-date">July 2020 - March 2024</time>
             <h3 class="experience-title">
-              Quality Incharge
+              Quality Incharge @ Khetia Drapers Ltd
             </h3>
             <h4 class="experience-location">Kitale</h4>
             <p class="experience-description">
@@ -851,5 +860,18 @@
         </p>
       </footer>
     </main>
+
+    <!-- Loading Screen Script -->
+    <script>
+      window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        setTimeout(function() {
+          loadingScreen.style.opacity = '0';
+          setTimeout(function() {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }, 800);
+      });
+    </script>
   </body>
 </html>
