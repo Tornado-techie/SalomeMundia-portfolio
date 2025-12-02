@@ -4,7 +4,7 @@ As the first hackathon challenge at PLP, this is a modern, responsive personal p
 
 ## 🚀 Live Demo
 
-Successfylly deployed as per the requirements, [View Live Portfolio at Github pages](https://tornado-techie.github.io/SalomeMundia-portfolio/)
+Successfully deployed as per the requirements, [View Live Portfolio at Github pages](https://tornado-techie.github.io/SalomeMundia-portfolio/)
 
 ## ✨ Features
 
